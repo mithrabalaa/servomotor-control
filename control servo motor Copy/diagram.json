@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Mithrabala Subramanian",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0.6, "left": -0.6, "attrs": {} },
+    { "type": "wokwi-servo", "id": "servo1", "top": 218.8, "left": 105.6, "attrs": {} }
+  ],
+  "connections": [
+    [ "uno:5V", "servo1:V+", "red", [ "v86.9", "h-54.4" ] ],
+    [ "uno:GND.3", "uno:GND.2", "black", [ "v0" ] ],
+    [ "uno:GND.2", "servo1:GND", "black", [ "v76.7", "h-53.7" ] ],
+    [ "uno:9", "servo1:PWM", "green", [ "v278.4", "h-56.8" ] ]
+  ],
+  "dependencies": {}
+}
